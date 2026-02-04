@@ -74,7 +74,7 @@ with open ("data_mahasiswa.txt", "r", encoding="utf-8") as file:
         baris = baris.strip()
         nim, nama, nilai = baris.split(",")
 
-        #Simpan data mahsiswa ke dictionary dengan key NIM
+        #Simpan data mahasis dictionary dengan key NIM
         data_dict[nim] = {          #key
         "nama": nama,               #values
         "nilai": int(nilai)         #values
