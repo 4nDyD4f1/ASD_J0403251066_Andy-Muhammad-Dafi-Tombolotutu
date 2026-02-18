@@ -27,6 +27,23 @@ class QueueLL:
         #Rear pindah ke node baru
         self.rear = nodeBaru
 
+    def dequeue(self):
+        #1) Lihat data yang paling depan (front)
+        if self.is_empty():
+            print("Queue kosong, tidak dapat melakukan dequeue.")
+            return None
+
+        #2) geser front ke node berikutnya
+        data = self.front.data
+        #Pindahkan front ke node berikutnya
+        self.front = self.front.next
+
+        #3) Jika setelah menggeser front menjadi None, maka rear juga harus diatur ke None
+        if self.front is None:
+            self.rear = None
+
+        return data
+
     def tampilkan(self):
 
         current = self.front
@@ -41,4 +58,7 @@ q = QueueLL()
 q.enqueue("A")
 q.enqueue("B")
 q.enqueue("C")
+q.tampilkan()
+
+q.dequeue()
 q.tampilkan()
