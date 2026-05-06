@@ -1,6 +1,6 @@
 # Nama  : Andy Muhammad Dafi T
 # NIM   : J0403251066
-# Kelas : Teknologi Rekayasa Perangkat Lunak
+# Kelas : Teknologi Rekayasa Perangkat
 
 import heapq
 
